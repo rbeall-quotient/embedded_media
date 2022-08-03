@@ -1,0 +1,16 @@
+uuid: 84ee0f70-2094-47eb-8394-d3025d6253fa
+langcode: en
+status: true
+dependencies:
+  module:
+    - embedded_media
+id: embedded_media
+label: 'Embedded Media'
+description: 'Save HTML as a media entity.'
+source: embedded_media
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_embedded_media
+field_map:
+  html: field_media_embedded_media

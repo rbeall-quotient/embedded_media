@@ -1,0 +1,35 @@
+uuid: d88937ae-85fe-4d1e-9edd-1d3f36e587b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_media
+    - media.type.document
+    - media.type.embedded_media
+    - media.type.image
+    - media.type.twitter
+    - paragraphs.paragraphs_type.media_paragraph
+id: paragraph.media_paragraph.field_media
+field_name: field_media
+entity_type: paragraph
+bundle: media_paragraph
+label: media
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      document: document
+      embedded_media: embedded_media
+      image: image
+      twitter: twitter
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: embedded_media
+field_type: entity_reference
