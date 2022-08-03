@@ -1,0 +1,12 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function embedded_media_theme() {
+  return [
+    'embedded_media' => [
+      'variables' => ['content' => NULL],
+    ],
+  ];
+}
